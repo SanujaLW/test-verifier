@@ -1,0 +1,25 @@
+{
+  "name": "vc.js-test",
+  "version": "1.0.0",
+  "description": "Testing @transmute/vc.js in gcp cloud run",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/index.js",
+    "afr-login": "npx google-artifactregistry-auth --repo-config=.npmrc --credential-config=.npmrc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@transmute/credentials-context": "0.7.0-unstable.66",
+    "@transmute/security-context": "0.7.0-unstable.66",
+    "@transmute/did-context": "0.7.0-unstable.66",
+    "jsonld": "8.1.0",
+    "jsonld-signatures": "11.0.0",
+    "@mattrglobal/bls12381-key-pair": "1.0.0",
+    "@mattrglobal/jsonld-signatures-bbs": "1.1.0",
+    "@transmute/ed25519-signature-2018": "0.7.0-unstable.66",
+    "@transmute/vc.js": "0.7.0-unstable.66",
+    "@diwala-internal/verifier": "1.0.1",
+    "@diwala-internal/nris": "2.4.1"
+  }
+}
